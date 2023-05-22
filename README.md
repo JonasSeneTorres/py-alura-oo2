@@ -3,7 +3,7 @@
 
 ## Sobre o desenvolvimento da aplicação
 
-Esta aplicação foi desenvolvida com base no material do curso [ Alura - Python: entendendo a Orientação a Objetos](https://cursos.alura.com.br/course/python-3-intro-orientacao-objetos) ministrado pelo Nico Steppat.
+Esta aplicação foi desenvolvida com base no material do curso [ Alura - Python: avançando na Orientação a Objetos](https://cursos.alura.com.br/course/python-3-avancando-orientacao-objetos) ministrado pelo Luan Marques.
 
 Curso mais que recomendado!!!
 
