@@ -35,6 +35,20 @@ class Serie(ProgramaTV):
     def __str__(self):
         return f"Nome: {self.nome}  - {self.ano} - {self.temporadas} temporadas - {self.likes} likes"
 
+class Playlist:
+    def __init__(self, nome, programas):
+        self.nome  = nome
+        self._programas = programas
+
+    def __getitem__(self, item):
+        return self._programas[item]
+
+    @property
+    def listagem(self):
+        return self._programas
+
+    def __len__(self):
+        return len(self._programas)
 
 vingadores = Filme("Vingadores - Guerra Infinita", 2018, 160)
 vingadores.dar_like()
@@ -45,8 +59,12 @@ atlanta.dar_like()
 
 grade_programas = [vingadores, atlanta]
 
-for programa in grade_programas:
+minhaPlaylist = Playlist('minha playlist', grade_programas)
+
+print(f"\nTamanho atual da da playlist: {len(minhaPlaylist)}\n")
+
+for programa in minhaPlaylist:
     print(programa)
 
-lista = [1, 2, 4, 5]
+
 
